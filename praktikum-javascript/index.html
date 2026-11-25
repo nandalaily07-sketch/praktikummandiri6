@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Praktikum Javascript</title>
+</head>
+<body>
+    <h2>Praktikum Basic Javascript</h2>
+    <p>Lihat hasil melalui Console (F12).</p>
+
+    <script>
+        const name = "Nanda Laily Sanie";
+        let umur = 19;
+        let nilai = 85;
+        let aktif = true;
+
+        console.log("nama", name);
+        console.log("umur", umur);
+        console.log("nilai", nilai);
+        console.log("status", aktif);
+        console.log("typenilai", typeof nilai);
+
+        const nilaiTugas = 80;
+        const nilaiUTS = 75;
+        const nilaiUAS = 50;
+        const nilaiAkhir = (nilaiTugas * 0.30) + (nilaiUTS * 0.30) + (nilaiUAS  * 0.40);
+
+        console.log("nilai akhir:", nilaiAkhir);
+        console.log("Lulus:", nilaiAkhir >= 60);
+
+        const nilaiohnilai = 78;
+        let statuskelulusan;
+
+        if (nilaiAkhir >= 60){
+            statuskelulusan = "Lulus";
+        }else {
+            statuskelulusan = "Tidak Lulus";
+        }
+        console.log("status kelulusan", statuskelulusan);
+    </script>
+
+
+</body>
+</html>
