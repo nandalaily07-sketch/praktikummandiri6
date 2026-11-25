@@ -9,54 +9,34 @@
     <p>Lihat hasil melalui Console (F12).</p>
 
     <script>
-        const nama = "Nanda Laily Sanie";
+        const name = "Nanda Laily Sanie";
         let umur = 19;
         let nilai = 85;
         let aktif = true;
 
-        console.log("Nama:", nama);
-        console.log("Umur:", umur);
-        console.log("Nilai:", nilai);
-        console.log("Status aktif:", aktif);
-        console.log("Tipe nilai:", typeof nilai);
+        console.log("nama", name);
+        console.log("umur", umur);
+        console.log("nilai", nilai);
+        console.log("status", aktif);
+        console.log("typenilai", typeof nilai);
 
-        const tugas = 80;
-        const uts = 75;
-        const uas = 50;
-        const akhir = tugas * 0.30 + uts * 0.30 + uas * 0.40;
+        const nilaiTugas = 80;
+        const nilaiUTS = 75;
+        const nilaiUAS = 50;
+        const nilaiAkhir = (nilaiTugas * 0.30) + (nilaiUTS * 0.30) + (nilaiUAS  * 0.40);
 
-        console.log("Nilai akhir:", akhir);
-        console.log("Lulus:", akhir >= 60);
+        console.log("nilai akhir:", nilaiAkhir);
+        console.log("Lulus:", nilaiAkhir >= 60);
 
         const nilaiohnilai = 78;
-        let kategori;
+        let statuskelulusan;
 
-        if (nilaiohnilai >= 92) {
-            kategori = "A";
+        if (nilaiAkhir >= 60){
+            statuskelulusan = "Lulus";
+        }else {
+            statuskelulusan = "Tidak Lulus";
         }
-        else if (nilaiohnilai >= 65) {
-            kategori = "B";
-        }
-        else if (nilaiohnilai >= 45) {
-            kategori = "C";
-        }
-        else {
-            kategori = "D";
-        }
-
-        console.log("Nilai:", nilaiohnilai);
-        console.log("kategori:", kategori);
-
-        function hitungDiskon(harga, persen) {
-            return harga - (harga * persen / 100);
-        }
-
-        for (let i = 1; i <= 3; i++) {
-            const harga = i * 42000;
-            const bayar = hitungDiskon(harga, 10);
-            console.log("Barang", i, "Harga:", harga, "Bayar:", bayar);
-        }
-
+        console.log("status kelulusan", statuskelulusan);
     </script>
 
 
